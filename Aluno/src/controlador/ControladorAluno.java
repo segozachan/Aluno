@@ -26,7 +26,6 @@ public class ControladorAluno {
 }
   public static void alterar(ManutencaoAluno man){
         Aluno objeto = new Aluno();
-        //definir todos os atributos
         objeto.setCodigo(Integer.parseInt(man.jtfCodigo.getText()));
         objeto.setNome(man.jtfNome.getText());
         objeto.setEndereco(man.jtfEndereco.getText());

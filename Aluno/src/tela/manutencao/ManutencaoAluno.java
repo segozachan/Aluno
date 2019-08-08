@@ -74,6 +74,11 @@ public class ManutencaoAluno extends javax.swing.JDialog {
         });
 
         btnCancelarvoltar.setText("Cancelar/Voltar");
+        btnCancelarvoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarvoltarActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Código:");
 
@@ -152,6 +157,10 @@ public class ManutencaoAluno extends javax.swing.JDialog {
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
        controlador.ControladorAluno.excluir(this);
     }//GEN-LAST:event_btnExcluirActionPerformed
+
+    private void btnCancelarvoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarvoltarActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnCancelarvoltarActionPerformed
 
     /**
      * @param args the command line arguments
